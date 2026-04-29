@@ -1,11 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KauchoPlus - Soluciones en Caucho Industrial de Alta Resistencia</title>
-    <meta name="description" content="KauchoPlus: Revestimientos de caucho, mangueras industriales y soluciones personalizadas para minería, industria naval, construcción vial e industria general. Calidad garantizada en Ecuador.">
-    <meta name="keywords" content="caucho industrial, revestimientos caucho, mangueras industriales, minería, industria naval, construcción vial, Ecuador">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="data:image/png;base64,....">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KauchoPlus | Caucho Industrial para Minería, Industria Naval y Avícola en Ecuador</title>
+
+<meta name="description" content="Soluciones en caucho industrial en Ecuador. Revestimientos, mangueras industriales y piezas moldeadas para minería y sectores industriales.">
+<meta name="keywords" content="caucho industrial Ecuador, mangueras industriales, minería, revestimientos de caucho">
+<meta name="robots" content="index, follow">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    background: black;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #FFC107;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1581092919534-9371a4c0a63b') no-repeat center/cover;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.btn {
+    background: #FFC107;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.card {
+    background: #222;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 20px;
+}
+
+/* WhatsApp */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>KauchoPlus</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#industrias">Industrias</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h2>Soluciones en Caucho de Alta Resistencia</h2>
+    <p>Productos diseñados para minería, industria naval y construcción vial.</p>
+    <a class="btn" href="https://wa.me/593991863635">Solicitar cotización</a>
+</section>
+
+<section>
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="grid">
+        <div class="card">Alta resistencia al desgaste</div>
+        <div class="card">Asesoría técnica especializada</div>
+        <div class="card">Soluciones personalizadas</div>
+    </div>
+</section>
+
+<section id="productos">
+    <h2>Productos</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Revestimientos</h3>
+            <p>Protección contra abrasión en equipos industriales.</p>
+        </div>
+        <div class="card">
+            <h3>Mangueras industriales</h3>
+            <p>Alta resistencia para transporte de fluidos.</p>
+        </div>
+        <div class="card">
+            <h3>Piezas moldeadas</h3>
+            <p>Fabricación a medida según requerimientos.</p>
+        </div>
+    </div>
+</section>
+
+<section id="industrias">
+    <h2>Industrias</h2>
+    <div class="grid">
+        <div class="card">Minería</div>
+        <div class="card">Naval</div>
+        <div class="card">Construcción vial</div>
+        <div class="card">Industria general</div>
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Solicita tu cotización personalizada</p>
+
+<form action="https://formspree.io/f/xbldkqwe" method="POST">
+
+    <input type="text" name="Nombre" placeholder="Nombre completo" required><br><br>
+
+    <input type="text" name="Empresa" placeholder="Empresa"><br><br>
+
+    <input type="email" name="Email" placeholder="Correo electrónico" required><br><br>
+
+    <input type="tel" name="Telefono" placeholder="Teléfono"><br><br>
+
+    <textarea name="Mensaje" placeholder="Describe tu requerimiento" required></textarea><br><br>
+
+    <input type="hidden" name="_next" value="https://TUUSUARIO.github.io/kauchoplus-web/gracias.html">
+
+    <input type="text" name="_gotcha" style="display:none">
+
+    <button type="submit">Enviar solicitud</button>
+
+</form>
+</section>
+
+<footer>
+    <p>© 2026 KauchoPlus - Todos los derechos reservados</p>
+</footer>
+
+<!-- BOTÓN WHATSAPP -->
+<a href="https://wa.me/593991863635" class="whatsapp">💬</a>
+
+</body>
+</html>
