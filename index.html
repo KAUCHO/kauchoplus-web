@@ -2,16 +2,17 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KauchoPlus | Caucho Industrial en Ecuador</title>
+
 <meta name="google-site-verification" content="FO3CAv6iYMjTqjiB-w2Q-wNV6hD68x5g3iTolt3hcoQ" />
-
-<title>KauchoPlus | Caucho Industrial para Minería, Industria Naval y Avícola en Ecuador</title>
-<h1>KauchoPlus | Caucho industrial en Ecuador</h1>
-<p>Revestimientos de caucho, mangueras industriales y soluciones para minería.</p>
-    
-
-<meta name="description" content="Soluciones en caucho industrial en Ecuador. Revestimientos, mangueras industriales y piezas moldeadas para minería y sectores industriales.">
-<meta name="keywords" content="caucho industrial Ecuador, mangueras industriales, minería, revestimientos de caucho">
+<meta name="description" content="Soluciones en caucho industrial en Ecuador. Revestimientos, mangueras industriales y equipos para minería e industria.">
+<meta name="keywords" content="caucho industrial Ecuador, minería, mangueras industriales, equipos avícolas">
 <meta name="robots" content="index, follow">
+
+<!-- Favicon -->
+<link rel="icon" href="logon.png">
 
 <style>
 body {
@@ -23,17 +24,30 @@ body {
 
 header {
     background: black;
-    padding: 20px;
-    text-align: center;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+header img {
+    height: 60px;
 }
 
 header h1 {
     color: #FFC107;
 }
 
+nav {
+    text-align: center;
+    background: #000;
+    padding: 10px;
+}
+
 nav a {
     color: white;
-    margin: 0 10px;
+    margin: 0 15px;
     text-decoration: none;
 }
 
@@ -60,17 +74,25 @@ section {
     margin-top: 20px;
 }
 
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .card {
     background: #222;
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
+    width: 280px;
 }
 
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 footer {
@@ -97,14 +119,16 @@ footer {
 <body>
 
 <header>
+    <img src="logon.png" alt="KauchoPlus">
     <h1>KauchoPlus</h1>
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#productos">Productos</a>
-        <a href="#industrias">Industrias</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
 </header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#industrias">Industrias</a>
+    <a href="#contacto">Contacto</a>
+</nav>
 
 <section class="hero" id="inicio">
     <h2>Soluciones en Caucho de Alta Resistencia</h2>
@@ -123,19 +147,36 @@ footer {
 
 <section id="productos">
     <h2>Productos</h2>
+
     <div class="grid">
+
         <div class="card">
+            <img src="revestimientos.jpg" alt="Revestimientos de caucho">
             <h3>Revestimientos</h3>
             <p>Protección contra abrasión en equipos industriales.</p>
         </div>
+
         <div class="card">
+            <img src="mangueras.jpg" alt="Mangueras industriales">
             <h3>Mangueras industriales</h3>
             <p>Alta resistencia para transporte de fluidos.</p>
         </div>
+
         <div class="card">
+            <img src="piezas.jpg" alt="Piezas moldeadas">
             <h3>Piezas moldeadas</h3>
             <p>Fabricación a medida según requerimientos.</p>
         </div>
+
+        <!-- NUEVO PRODUCTO -->
+        <div class="card">
+            <a href="pelapollos.png" target="_blank">
+                <img src="pelapollos.png" alt="Peladoras de pollo">
+            </a>
+            <h3>Peladoras de Pollo</h3>
+            <p>Equipos industriales para procesamiento avícola de alta eficiencia.</p>
+        </div>
+
     </div>
 </section>
 
@@ -156,17 +197,12 @@ footer {
 <form action="https://formspree.io/f/xbldkqwe" method="POST">
 
     <input type="text" name="Nombre" placeholder="Nombre completo" required><br><br>
-
     <input type="text" name="Empresa" placeholder="Empresa"><br><br>
-
     <input type="email" name="Email" placeholder="Correo electrónico" required><br><br>
-
     <input type="tel" name="Telefono" placeholder="Teléfono"><br><br>
-
     <textarea name="Mensaje" placeholder="Describe tu requerimiento" required></textarea><br><br>
 
-    <input type="hidden" name="_next" value="https://TUUSUARIO.github.io/kauchoplus-web/gracias.html">
-
+    <input type="hidden" name="_next" value="https://kaucho.github.io/kauchoplus-web/gracias.html">
     <input type="text" name="_gotcha" style="display:none">
 
     <button type="submit">Enviar solicitud</button>
